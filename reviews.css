@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    margin-bottom: 0;
+}
+.reviews{
+    margin-bottom: 30px;
+}
+.underline{
+    background-color: blue;
+    padding: 1px;
+    margin-top: 0;
+    height: 10px;
+    animation: move 10s infinite 2s;
+}
+@keyframes move{
+    from{width: 2px; background-color: white}
+    to{width: 180px; background-color: blue}
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 0 25%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgb(110, 82, 82);
+}
+img{
+    width: 300px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 24px;
+    font-weight: 900;
+}
+.job{
+    font-size: large;
+    font-weight: 700;
+}
+.change-btn{
+    padding: 10px;
+}
+button{
+    font-size: 1.5em;
+}
+#next-btn{
+    color:blue;
+    background-color: transparent;
+    border: none;
+    margin-left: 2.5px;
+    cursor: pointer;
+}
+#prev-btn{
+    color:blue;
+    background-color: transparent;
+    border: none;
+    margin-right: 2.5px;
+    cursor: pointer;
+}
+#random-btn{
+    background-color: blue;
+    border-radius: 5px;
+    border-color: blue;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 720px) {
+    .container{
+        margin: 0 20%;
+    }
+};
